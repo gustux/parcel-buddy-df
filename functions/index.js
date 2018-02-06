@@ -14,8 +14,9 @@ const TRY_AGAIN = [
   'We can stop here. See you soon.'
 ];
 
-exports.ParcelBuddy= (req, res) => {
-  const app = new DialogflowApp( req, res);
+//exports.parcelBuddy = functions.https.onRequest((request, response) => {
+exports.parcelBuddy = functions.https.onRequest((req, res) => {
+  const app = new DialogflowApp(req, res);
 
   //Initial intent
   function welcomeIntent (app){
@@ -119,4 +120,6 @@ exports.ParcelBuddy= (req, res) => {
   actionMap.set('provider.action', providerIntent);
   
   app.handleRequest(actionMap);
-}
+
+//}
+});

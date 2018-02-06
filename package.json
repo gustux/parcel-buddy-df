@@ -1,0 +1,43 @@
+{
+  "name": "parcel-buddy-df",
+  "version": "1.0.0",
+  "description": "resolve parcel costs",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "~5.8.1",
+    "actions-on-google": "^1.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustux/parcel-buddy-df.git"
+  },
+  "keywords": [
+    "parcel",
+    "buddy",
+    "costs",
+    "delivery",
+    "packet",
+    "letter",
+    "envelope"
+  ],
+  "author": "Tuxor Services LTD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustux/parcel-buddy-df/issues"
+  },
+  "homepage": "https://github.com/gustux/parcel-buddy-df#readme"
+  "conversations": {
+    "parcelBuddy": {
+      "name": "parcelBuddy",
+      "url": "https://us-central1-parcel-buddy-78930.cloudfunctions.net/parcelBuddy",
+	  "fulfillmentApiVersion": "2"
+    }
+  },
+  "dependencies": {
+    "actions-on-google": "^1.5.x"
+  }
+}
